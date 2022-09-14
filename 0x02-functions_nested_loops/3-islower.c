@@ -8,6 +8,7 @@
 int _islower(int c)
 {
 	char ch = 'a';
+	char r;
 
 	while (ch <= 'z')
 	{
@@ -16,8 +17,9 @@ int _islower(int c)
 			_putchar('1');
 		}
 		ch++;
+		r = ch;
 	}
-	if (c != ch)
+	if (c != r)
 	{
 		_putchar('0');
 	}
