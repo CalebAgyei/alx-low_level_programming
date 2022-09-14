@@ -17,5 +17,9 @@ int _islower(int c)
 		}
 		ch++;
 	}
+	if (c != ch)
+	{
+		_putchar('0');
+	}
 	return (0);
 }
