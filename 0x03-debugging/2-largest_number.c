@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,38 +11,38 @@
 
 int largest_number(int x, int y, int z)
 {
-	int largest;
+	/* int largest; */ 
 
 	if ((x > y) && (y > z))
 	{
-		largest = x;
+		printf("%d\n", x);
 	}
 	else if ((y > x) && (x > z))
 	{
-		largest = y;
+		printf("%d\n", y);
 	}
 	else if ((z > x) && (x > y))
 	{
-		largest = z;
+		printf("%d\n", z);
 	}
 	/* additional code */
 	else if ((x == y) && (x == z))
 	{
-		largest = x;
+		printf("%d\n", x);
 	}
 	else if ((x == y) && (x > z))
 	{
-		largest = x;
+		printf("%d\n", x);
 	}
 	else if ((x == z) && (x > y))
 	{
-		largest = x;
+		printf("%d\n", x);
 	}
 	else if ((y == z) && (y > x))
 	{
-		largest = y;
+		printf("%d\n", y);
 	}
 
 
-	return (largest);
+	return (0);
 }
