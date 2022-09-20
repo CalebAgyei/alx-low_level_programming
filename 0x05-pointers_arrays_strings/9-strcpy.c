@@ -10,21 +10,22 @@
  */
 char *_strcpy(char *dest, char *src)
 {
+	char a;
+	char b;
 	int i;
 	int j;
 	int len = 0;
-	/*char a;*/
+	src = &a;
+	dest = &b;
 
-	for (i = 0; src[i] != '\n'; i++)
+	for (i = 0; a[i] != '\n'; i++)
 	{
 		len++;
 	}
 	for (j = 0; j < len; j++)
 	{
-		printf("%d: \n", src[j]);
-		/* printf("%d", a);*/
+		b[j] = a[j]; 
 	}
-	/**dest = a*/
 
 	return (dest);
 }
