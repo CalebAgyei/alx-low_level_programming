@@ -5,27 +5,26 @@
  * _strcpy - copies the string pointed to by src, including the
  * terminating null byte (\0), to the buffer pointed to by dest
  * @dest: pointer of type integer
- * @src: any value of type integer
+ * @src: str to be copied, of type integer
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	char a;
-	char b;
-	int i;
-	int j;
+	int i, j;
 	int len = 0;
-	src = &a;
-	dest = &b;
 
-	for (i = 0; a[i] != '\n'; i++)
+	/* find the length of string in src */
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		len++;
 	}
+
 	for (j = 0; j < len; j++)
 	{
-		b[j] = a[j]; 
+		/* copy src into dest*/
+		dest[j] = src[j]; 
 	}
+	dest[i] = '\0';
 
 	return (dest);
 }
