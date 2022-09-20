@@ -6,7 +6,7 @@
  * terminating null byte (\0), to the buffer pointed to by dest
  * @dest: pointer of type integer
  * @src: any value of type integer
- * Return: the pointer to dest 
+ * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
