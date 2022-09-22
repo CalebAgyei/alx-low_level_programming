@@ -1,23 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 /**
- * main - generates random valid passwords
- *
+ * main - makes something crack 101crackme
+ * Description: cracking the hacker code
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
-	int a[5];
-	int *p;
-	
-	a[2] = 1024;
-	p = &n;
-	*(p + 5) = 98;
-	/* ...so that this prints 98\n */
-	printf("a[2] = %d\n", a[2]);
+	int ascii = 2772, i = 0, j, random;
+	char password[100];
+	time_t t;
+
+	srand((int) time(&t));
+	while (ascii > 126)
+	{
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
+		i++;
+	}
+	if (ascii > 0)
+	{
+		password[i] = ascii;
+	}
+	else
+	{
+		i--;
+	}
+	for (j = 0; j <= i; j++)
+	{
+		printf("%c", password[j]);
+	}
 	return (0);
 }
 
