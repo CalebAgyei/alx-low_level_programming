@@ -12,3 +12,4 @@ char *leet(char *);
 int _putchar(char c);
 
 #endif /* MAIN_H */
+char *rot13(char *);
