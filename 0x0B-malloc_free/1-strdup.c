@@ -29,7 +29,7 @@ char *_strdup(char *str)
 
 	if (ch != NULL)
 	{
-		if (str == NULL)
+		if (str[0] == '\0')
 		{
 			ch = NULL;
 		}
