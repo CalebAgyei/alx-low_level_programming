@@ -22,6 +22,9 @@ char *_strdup(char *str)
 	int i;
 	int strlen = 0;
 
+	if (str == NULL)
+		return (NULL);
+
 	for (i = 0; str[i] != '\0'; i++)
 		strlen++;
 
@@ -29,18 +32,8 @@ char *_strdup(char *str)
 
 	if (ch != NULL)
 	{
-		if (str == NULL)
-		{
-			return (NULL);
-		}
-
-		else
-		{
-			for (i = 0; i < strlen; i++)
-			{
-				ch[i] = str[i];
-			}
-		}
+		for (i = 0; i < strlen; i++)
+			ch[i] = str[i];
 	}
 	return (ch);
 }
