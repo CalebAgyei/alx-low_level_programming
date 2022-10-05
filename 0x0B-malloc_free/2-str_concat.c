@@ -37,8 +37,7 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 	}
 	/**
-	 * Another way of determining the length of the two strings
-	 * in one statement
+	 * Another way of determining the length of the two strings in one statement
 	 * for (i = 0; s1[i] || s2[a]; i++)
 	 *		length++
 	 */
@@ -57,6 +56,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		concat_str[j++] = s2[i];
 	}
-
 	return (concat_str);
 }
