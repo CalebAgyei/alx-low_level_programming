@@ -31,10 +31,10 @@ char *_strdup(char *str)
 	{
 		if (str == NULL)
 		{
-			return (NULL);
+			ch = NULL;
 		}
-		
-		else 
+
+		else
 		{
 			for (i = 0; i < strlen; i++)
 			{
