@@ -9,6 +9,7 @@
  * Description: If the program is renamed, it will print the new name,
  * without having to compile it again. You should not remove the path
  * before the name of the program.
+ * Return: 0 (Always success).
  */
 int main(int argc, char **argv)
 {
