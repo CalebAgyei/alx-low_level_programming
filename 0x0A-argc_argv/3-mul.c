@@ -7,7 +7,8 @@
  * @argc: Count of arguments.
  * @argv: Array of strings.
  *
- * Description: Prints the result of the multiplication, followed by a new line.
+ * Description: Prints the result of the multiplication,
+ * followed by a new line.
  * Assume that the two numbers and result of multiplication can be stored
  * in an integer.
  * If the program does not receive two arguments, print 'Error',
@@ -16,8 +17,8 @@
  */
 int main(int argc, char **argv)
 {
-	int x; 
-	int y; 
+	int x;
+	int y;
 
 	if (argc < 3)
 	{
@@ -27,8 +28,8 @@ int main(int argc, char **argv)
 
 	else
 	{
- 		x = atoi(argv[1]);
- 		y = atoi(argv[2]);
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
 		printf("%d\n", x * y);
 	}
 
