@@ -23,8 +23,8 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i;
-	char *str, *sep;
+	int i = 0;
+	char *str, *sep = "";
 	va_list ap;
 
 	va_start(ap, format);
@@ -48,8 +48,8 @@ void print_all(const char * const format, ...)
 					str = va_arg(ap, char *);
 					if (!str)
 						str = "(nil)";
-					else
-						printf("%s%s", sep, str);
+						
+					printf("%s%s", sep, str);
 					break;
 				default:
 					i++;
