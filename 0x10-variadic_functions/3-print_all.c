@@ -5,6 +5,7 @@
 /**
  * print_all - Print anything.
  * @format: List of types or arguments passed to the function
+ *
  * Description:
  * c: char
  * i: integer
