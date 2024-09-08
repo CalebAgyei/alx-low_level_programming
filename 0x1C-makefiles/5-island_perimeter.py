@@ -4,4 +4,4 @@ def island_perimeter(grid):
 
     Arguments:
     grid -- a list of integers
-    """"
+    """
